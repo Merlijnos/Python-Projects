@@ -10,15 +10,15 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Elden Ring")
 
 # Load background music
-pygame.mixer.music.load("background_music.mp3")
+pygame.mixer.music.load("Elden-Ring/background_music.mp3")
 pygame.mixer.music.set_volume(0.5)
 pygame.mixer.music.play(-1)
 
 # Load sound effect
-explosion_sound = pygame.mixer.Sound("explosion.wav")
+explosion_sound = pygame.mixer.Sound("Elden-Ring/explosion.wav")
 
 # Load player image
-player_image = pygame.image.load("player.png")
+player_image = pygame.image.load("Elden-Ring/player.png")
 player_width = player_image.get_width()
 player_height = player_image.get_height()
 player_image = pygame.transform.scale(player_image, (player_width // 2, player_height // 2))
@@ -29,7 +29,7 @@ player_y = screen_height - player_height - 10
 player_speed = 5
 
 # Load enemy image
-enemy_image = pygame.image.load("enemy.png")
+enemy_image = pygame.image.load("Elden-Ring/enemy.png")
 enemy_image = pygame.transform.rotate(enemy_image, -90)
 enemy_image = pygame.transform.scale(enemy_image, (64, 64))
 enemy_x = random.randint(0, screen_width - enemy_image.get_width())
@@ -37,7 +37,7 @@ enemy_y = random.randint(-screen_height, -enemy_image.get_height())
 enemy_speed = 1
 
 # Load background image
-background_image = pygame.image.load("background.png")
+background_image = pygame.image.load("Elden-Ring/background.png")
 
 # Define score variable
 score = 0

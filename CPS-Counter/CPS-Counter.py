@@ -20,7 +20,7 @@ class CPSCounter:
         self.font = font.Font(family="Helvetica", size=12, weight="bold")
         self.label = tk.Label(self.root, text="Press Start to begin", font=self.font, bg="#1E1E1E", fg="#FFFFFF")
         self.label.pack(pady=20)
-        self.start_button_image = Image.open("start_button.png")
+        self.start_button_image = Image.open("CPS-counter/start_button.png")
         self.start_button_image = self.start_button_image.resize((100, 50), Image.BICUBIC)
         self.start_button_photo = ImageTk.PhotoImage(self.start_button_image)
         self.start_button = tk.Button(self.root, image=self.start_button_photo, bg="#1E1E1E", bd=0, command=self.start)
